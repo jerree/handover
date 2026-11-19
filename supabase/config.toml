@@ -1,0 +1,36 @@
+
+[functions.structure-entry]
+verify_jwt = true
+entrypoint = "./functions/structure-entry/index.ts"
+
+[functions.trusted-contact]
+verify_jwt = true
+entrypoint = "./functions/trusted-contact/index.ts"
+
+[functions.handover-access]
+verify_jwt = false
+entrypoint = "./functions/handover-access/index.ts"
+
+[functions.generate-first-72]
+verify_jwt = true
+entrypoint = "./functions/generate-first-72/index.ts"
+
+[functions.send-test-message]
+verify_jwt = true
+entrypoint = "./functions/send-test-message/index.ts"
+
+[functions.confirm-checkin]
+verify_jwt = false
+entrypoint = "./functions/confirm-checkin/index.ts"
+
+[functions.telegram-link]
+verify_jwt = true
+entrypoint = "./functions/telegram-link/index.ts"
+
+[functions.telegram-webhook]
+verify_jwt = false
+entrypoint = "./functions/telegram-webhook/index.ts"
+
+[functions.run-ladder]
+verify_jwt = false
+entrypoint = "./functions/run-ladder/index.ts"
